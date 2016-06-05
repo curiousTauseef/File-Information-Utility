@@ -14,7 +14,8 @@ int main()
 {
     printf("\n\tFile Information Utility\n");
     printf("\tBy Ben Brown\n\n");
-    printf("\t%.0f\n\n", count_char());
+
+    printf("\tTotal Counted Characters:\t%.0f\n\n", count_char());
 
     return error_code;
 }
