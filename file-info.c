@@ -8,10 +8,12 @@ Benjamin Brown
 #include "file-info.h"
 
 int error_code = 0;
-double counted_chars = 0;
 
 int main()
 {
+    double counted_chars = 0;
+
+
     printf("\n\tFile Information Utility\n");
     printf("\tBy Ben Brown\n\n");
 
