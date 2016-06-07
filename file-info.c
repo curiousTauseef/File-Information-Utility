@@ -7,24 +7,30 @@ Benjamin Brown
 #include <stdio.h>
 #include "file-info.h"
 
-int error_code = 0;
+double counted_chars = 0;
+double counted_lines = 0;
 
 int main()
 {
-    double counted_chars = 0;
-
-
     printf("\n\tFile Information Utility\n");
     printf("\tBy Ben Brown\n\n");
 
-    printf("\tTotal Counted Characters:\t%.0f\n\n", count_char());
+    count_stats();
 
-    return error_code;
+    printf("\tTotal Counted Characters:\t%.0f\n\n", counted_chars);
+    printf("\t     Total Counted Lines:\t%.0f\n\n", counted_lines);
+
+    return 0;
 }
 
-double count_char()
+double count_stats()
 {
-    for (;getchar() != EOF; ++counted_chars)
-        ;
-    return counted_chars;
+    int c =0;
+
+    while ((c = getchar()) != EOF)
+        if (c == '\n')
+            ++counted_lines;
+        else
+            ++counted_chars;
+    return 0;
 }

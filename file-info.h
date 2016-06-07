@@ -1,2 +1,2 @@
-double count_char();
+double count_stats();
 
