@@ -8,7 +8,6 @@ Benjamin Brown
 #include "file-info.h"
 
 double counted_realchars, counted_chars, counted_lines = 0;
-int ndigit[10];
 
 int main()
 {
@@ -16,9 +15,6 @@ int main()
     printf("\tBy Ben Brown\n\n");
 
     count_stats();
-
-
-
 
     printf("\tTotal Counted Characters:\t%.0f\n", counted_realchars);
     printf("\tTotal Visible Characters:\t%.0f\n", counted_chars);
@@ -44,8 +40,3 @@ double count_stats()
     printf("\n\n");
     return 0;
 }
-
-
-
-
-
