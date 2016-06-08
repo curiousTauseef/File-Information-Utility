@@ -5,3 +5,5 @@ file-info
 *.objdump
 
 *.s
+*.asm
+*.dasm
