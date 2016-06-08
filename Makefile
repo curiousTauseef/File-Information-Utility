@@ -23,6 +23,10 @@ clean:
 	-rm -f *.o
 	-rm -f $(TARGET)
 	-rm -f *.objdump
+	-rm -f *.s
 
-dump:
+dumpobj:
 	objdump -D -S -G -f -p $(TARGET).o > $(TARGET).objdump
+
+convasm:
+	gcc -S $(TARGET).c

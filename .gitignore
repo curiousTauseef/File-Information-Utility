@@ -1,2 +1,7 @@
 #Executable
 file-info
+
+*.o
+*.objdump
+
+*.s
