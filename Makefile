@@ -3,7 +3,7 @@ LIBS = -lm
 CC = gcc
 CFLAGS = -g -Wall
 
-.PHONY: default all clean
+.PHONY: default all clean dump asm
 
 default: $(TARGET)
 all: default
@@ -25,8 +25,8 @@ clean:
 	-rm -f *.objdump
 	-rm -f *.s
 
-dumpobj:
+dump:
 	objdump -D -S -G -f -p $(TARGET).o > $(TARGET).objdump
 
-convasm:
+asm:
 	gcc -S $(TARGET).c
