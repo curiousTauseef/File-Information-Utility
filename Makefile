@@ -22,3 +22,7 @@ $(TARGET): $(OBJECTS)
 clean:
 	-rm -f *.o
 	-rm -f $(TARGET)
+	-rm -f *.objdump
+
+dump:
+	objdump -D -S -G -f -p $(TARGET).o > $(TARGET).objdump
