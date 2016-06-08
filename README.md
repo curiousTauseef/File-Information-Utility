@@ -1,2 +1,2 @@
 # File-Information-Utility
-Study: ANSI C file information utility
+ANSI C file information utility
